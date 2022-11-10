@@ -1,0 +1,48 @@
+.features {
+    display: flex;
+
+    &__title {
+        margin-bottom: 10px;
+
+        color: var(--title-text-color);
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.4;
+        text-transform: uppercase;
+
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+.features__description {
+    flex-basis: 270px;
+}
+
+.features__description:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features-box {
+    width: 270px;
+    height: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    background-color: var(--portfolio-nav);
+
+    &__icon {
+        display: block;
+        width: 70px;
+        height: 70px;
+
+        margin: 0 auto;
+    }
+}

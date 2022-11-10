@@ -1,0 +1,75 @@
+.teem {
+    background-color: var(--portfolio-nav);
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    font-size: 16px;
+    line-height: 1.9;
+
+    &__items {
+        flex-basis: calc((100% - 3 * 50px)/4);
+
+        background-color: var(--main-background-color);
+        text-align: center;
+
+        box-shadow:
+            0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__photo {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+        color: var(--title-text-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+
+    &__text {
+        margin-bottom: 16px;
+    }
+}
+
+
+.social {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    gap: 10px;
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
+}
+
+.social__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: var(--social-icon);
+
+    transition: color var(--anim),
+        bacgrount-color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+        border-radius: 50%;
+    }
+}
