@@ -34,10 +34,10 @@
 
   transition: border-color var(--anim);
 
-  &:focus,
-  &:hover {
-    border-color: var(--accent-color);
-  }
+//   &:focus,
+//   &:hover {
+//     border-color: var(--accent-color);
+//   }
 
   &__icon {
     transition: fill var(--anim);
@@ -162,7 +162,7 @@
       border: none;
     }
 
-    &:checked + .check__icon {
+    &:checked + .check__wrapper .check__icon {
       opacity: 1;
     }
   }

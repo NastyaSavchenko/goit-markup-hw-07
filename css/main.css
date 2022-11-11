@@ -160,9 +160,6 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: border-color var(--anim);
 }
-.modal-btn:focus, .modal-btn:hover {
-  border-color: var(--accent-color);
-}
 .modal-btn__icon {
   transition: fill var(--anim);
 }
@@ -261,7 +258,7 @@ body {
 .check__input:checked + .check__wrapper {
   border: none;
 }
-.check__input:checked + .check__icon {
+.check__input:checked + .check__wrapper .check__icon {
   opacity: 1;
 }
 .check__link {
